@@ -21,18 +21,20 @@ export default function Intro() {
               </h1>
               <div className="mt-4 space-y-2">
                 <h2 className="text-[24px] md:text-[30px] font-black leading-[1.1] text-[#1A1A1A] tracking-tight uppercase">
-                  Sog'lom yurak <br />
-                  va barqaror <br />
-                  <span className="text-[#CC1D24]">qon bosimi!</span>
+                  yurak va qon tomirlariga har kuni
+                  <span className="text-[#CC1D24]"> g‘amxo‘rlik</span>
                 </h2>
               </div>
             </div>
 
             <div className="flex items-start gap-4 max-w-[420px] mb-10 border-l-4 border-[#CC1D24] pl-5 bg-gray-50/50 py-4 pr-4 rounded-r-2xl">
-              <p className="text-[#333] text-[13px] md:text-[15px] leading-relaxed font-semibold uppercase tracking-tight">
-                Qon tomirlarini tozalash va arterial bosimni tabiiy
-                normallashtirish uchun
-                <span className="text-[#CC1D24]"> innovatsion majmua</span>.
+              <p className="text-[#333] text-[9px] md:text-[10px] leading-relaxed font-semibold uppercase tracking-tight">
+                yurak va qon tomirlari faoliyatini qo‘llab-quvvatlash uchun
+                mo‘ljallangan biologik faol oziq-ovqat qo‘shimchasidir. O‘simlik
+                ekstraktlari majmuasi yurak-qon tomir tizimining normal
+                funksional holatini saqlashga yordam beradi, qulaylik va
+                tananing kundalik yuklamalarga chidamliligini saqlashga yordam
+                beradi
               </p>
             </div>
 
@@ -59,21 +61,21 @@ export default function Intro() {
               {/* Yurak foni effekti */}
               <div className="absolute inset-0 bg-[#CC1D24]/5 rounded-full blur-3xl" />
 
-              <div className="relative w-full h-full rounded-[40px] overflow-hidden border border-gray-100 shadow-2xl bg-white flex items-center justify-center p-6">
+              <div className="relative w-full h-full rounded-[40px] overflow-hidden  border-gray-100 shadow-2xl bg-white flex items-center justify-center p-6">
                 <Image
-                  src="/gipertofort-main.png"
+                  src="/intro.png"
                   alt="Gipertofort Benefit"
                   fill
-                  className="object-contain p-10 hover:scale-105 transition-transform duration-500"
+                  className="object-cover  hover:scale-105 transition-transform duration-500"
                   priority
                 />
               </div>
 
               {/* Mahsulot qutisi */}
-              <div className="absolute -bottom-8 -left-4 md:-left-12 z-20 w-[180px] md:w-[280px] drop-shadow-2xl">
-                <div className="relative aspect-[1/1.2] rounded-[24px] border-[6px] border-white overflow-hidden shadow-2xl bg-white transition-transform duration-300 hover:-rotate-2">
+              <div className="absolute -bottom-8 -left-4 md:-left-12 z-20 w-[180px] md:w-[200px] drop-shadow-2xl">
+                <div className="relative aspect-[1/1.2] rounded-[24px]  overflow-hidden shadow-2xl  transition-transform duration-300 hover:-rotate-2">
                   <Image
-                    src="/gipertofort-box.png"
+                    src="/intro2.png"
                     alt="Gipertofort Packaging"
                     fill
                     className="object-cover"

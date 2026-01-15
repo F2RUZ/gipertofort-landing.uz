@@ -19,7 +19,7 @@ export default function Usage() {
           />
         </svg>
       ),
-      title: "KUNIGA 1 MAHAL",
+      title: "KUNIGA 2 MAHAL",
       desc: "Ovqat paytida yoki ovqatdan keyin iste'mol qiling",
     },
     {
@@ -102,7 +102,7 @@ export default function Usage() {
             }}
           >
             <Image
-              src="/usage-visual.png"
+              src="/right.png"
               alt="Gipertofort Usage"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"

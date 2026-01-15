@@ -4,20 +4,23 @@ import Image from "next/image";
 export default function Composition() {
   const mainFeatures = {
     vessels: [
-      "Qon tomirlari devorini mustahkamlaydi",
-      "Xolesterin tugunlari hosil bo'lishini kamaytiradi",
+      "tomirlarning me’yoriy tonusini saqlashga yordam beradi",
+      "yurak-qon tomir tizimi faoliyatini qo‘llab-quvvatlaydi",
+      "hissiy muvozanatni saqlashga  yordam beradi.",
+      "organizmning umumiy holatini  saqlab turadi",
     ],
     complex: [
-      "Do'lana ekstrakti — yurak ritmini barqarorlashtiradi",
-      "Vitamin B majmuasi — asab tizimini tinchlantiradi",
-      "Magniy — qon tomirlari spazmini yo'qotadi",
+      "ginkgo biloba",
+      "do‘lana",
+      "valeriana",
+      "limono‘t"
     ],
   };
 
   const components = [
     { name: "Do'lana", desc: "Yurak quvvati" },
-    { name: "Magniy", desc: "Tomirlar elastikligi" },
-    { name: "Vitamin B6", desc: "Bosim nazorati" },
+    { name: "ginkgo biloba", desc: "Xolesterin muozanati" },
+    { name: "limono‘t", desc: "Tomirlar elastikligi" },
     { name: "Valeriana", desc: "Tinchlantiruvchi" },
   ];
 
@@ -65,7 +68,7 @@ export default function Composition() {
             <div className="w-44 h-44 md:w-56 md:h-56 relative">
               <div className="absolute inset-0 bg-white rounded-full shadow-2xl flex items-center justify-center p-2 border border-gray-50">
                 <Image
-                  src="/blood-health.png"
+                  src="/center.png"
                   alt="Vessel Health"
                   fill
                   className="object-contain p-4 transition-transform duration-500 hover:scale-110"
@@ -95,10 +98,11 @@ export default function Composition() {
           <div className="w-full lg:w-[380px] bg-white rounded-[32px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-gray-100 transition-all duration-300 hover:shadow-red-600/5">
             <div className="mb-6">
               <h3 className="text-[#CC1D24] text-xl font-black uppercase italic">
-                KOMPLEKS
+                Tarkibi
               </h3>
               <p className="text-[9px] text-gray-400 font-bold uppercase tracking-widest mt-1">
-                Vitamin va Minerallar
+                Gipertofort tarkibiga o‘simliklardan olingan biologik faol
+                komponentlar kiradi, jumladan:
               </p>
               <div className="h-1 w-10 bg-[#CC1D24] mt-2 rounded-full" />
             </div>

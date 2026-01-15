@@ -6,7 +6,7 @@ export default function Gymnastics() {
     {
       title: "YURAK",
       subtitle: "KARDIO MASHQLAR",
-      imgSrc: "/kardio.png",
+      imgSrc: "/yurak.png",
       color: "from-red-50 to-red-100",
     },
     {

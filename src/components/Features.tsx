@@ -3,13 +3,13 @@
 export default function Features() {
   const features = [
     {
-      text: "Arterial bosimni tabiiy normallashtirish",
+      text: "yurakning funksional holatini saqlashga yordam beradi",
     },
     {
       text: "Qon tomirlari elastikligini tiklash",
     },
     {
-      text: "Yurak faoliyatini kompleks himoya qilish",
+      text: "tabiiy o‘simlik tarkibi",
     },
   ];
 

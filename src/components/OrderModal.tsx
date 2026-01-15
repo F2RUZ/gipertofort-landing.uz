@@ -57,7 +57,7 @@ export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
     setFormData({ ...formData, phone: formatted });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const digitsOnly = formData.phone.replace(/\D/g, "");
 
@@ -84,10 +84,16 @@ export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
         }
       );
 
+      // --- STATUS KODLARINI TEKSHIRISH ---
       if (response.ok) {
         setStatus("success");
         setTimeout(() => onClose(), 3500);
+      } else if (response.status === 429) {
+        // Agar bir soat ichida qayta yuborilgan bo'lsa
+        setStatus("idle");
+        showNotice("Siz allaqachon ariza qoldirgansiz. Iltimos, 1 soatdan keyin qayta urinib ko'ring.");
       } else {
+        // Boshqa server xatoliklari uchun
         throw new Error();
       }
     } catch (error) {
@@ -95,7 +101,6 @@ export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
       showNotice("Xatolik! Server bilan bog'lanib bo'lmadi.");
     }
   };
-
   if (!isOpen) return null;
 
   return (

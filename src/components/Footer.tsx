@@ -23,10 +23,7 @@ export default function MainFooter() {
         
 
             <div className="space-y-4 p-5 bg-white/[0.02] rounded-3xl border border-white/5">
-              <p className="font-bold text-white/80 italic">
-                Savollar yoki takliflar yuzaga kelgan taqdirda O'zbekistondagi
-                ishonchli vakil bilan bog'laning.
-              </p>
+         
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <p>
                   <span className="text-white font-black uppercase text-[10px] block mb-1">

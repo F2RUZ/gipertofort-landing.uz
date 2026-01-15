@@ -11,21 +11,21 @@ export default function Articles() {
       title: "Qon bosimi va oziqlanish",
       description:
         "Tuz miqdorini kamaytirish va kaliyga boy mahsulotlar orqali arterial bosimni nazorat qilish usullari.",
-      imgSrc: "/art1.png",
+      imgSrc: "/bosim.png",
       category: "PARHEZ",
     },
     {
       title: "Yurak tomirlarini tozalash",
       description:
         "Xolesterin miqdorini kamaytirish va qon tomirlari elastikligini tiklash bo'yicha mutaxassis tavsiyalari.",
-      imgSrc: "/art2.png",
+      imgSrc: "/yurakt.png",
       category: "TIBBIYOT",
     },
     {
       title: "Gipertoniya profilaktikasi",
       description:
         "Kundalik stressni boshqarish va to'g'ri dam olish orqali yuqori bosim xavfini 40% ga kamaytirish sirlari.",
-      imgSrc: "/art3.png",
+      imgSrc: "/giperton.png",
       category: "SOG'LOM HAYOT",
     },
   ];
